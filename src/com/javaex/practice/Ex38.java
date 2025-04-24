@@ -9,7 +9,7 @@ public class Ex38 {
 		
 		System.out.print("전체금액을 입력해주세요: ");
 		int money = sc.nextInt();
-		System.out.println("실제지불급액은 " + money / 1000 * 1000 + " 입니다");
+		System.out.println("실제지불급액은 " + (money - (money % 1000)) + " 입니다");
 		
 		sc.close();
 		
